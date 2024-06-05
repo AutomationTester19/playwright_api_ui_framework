@@ -27,3 +27,10 @@ userInfo = {
 print(userInfo)
 print("#################")
 
+user_key_list = list(filter(lambda a: userInfo.get(a) > 3000, userInfo))
+print(user_key_list)
+print("#################")
+
+user_dict = tuple(map(lambda a: a % 2 != 0, userInfo))
+print(user_dict)
+
